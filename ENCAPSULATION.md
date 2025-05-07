@@ -1,12 +1,9 @@
 # Exp.No:29  
 ## Encapsulation
 
----
-
 ### AIM  
 To write a Python program to create a class `Student` with the private members `name` and `age`, and add getter and setter methods to initialize and modify the `age` variable.
 
----
 
 ### ALGORITHM
 
@@ -26,14 +23,28 @@ To write a Python program to create a class `Student` with the private members `
 ### PROGRAM
 
 ```
+# Reg.No-212223050048
+# Name-SIBIRAJI M
+# Write your code here
+class Student:
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
 
+    def get_age(self):
+        return self.__age
 
-
+    def set_age(self, age):
+        if age >= 0:
+            self.__age = age
+        else:
+            print("Invalid age. Age must be non-negative.")
 ```
 
 ### OUTPUT
-
+![image](https://github.com/user-attachments/assets/10013e6d-71d9-42c5-ac08-98fbe7921944)
 
 ### RESULT
+Thus the Python program to create a class `Student` with the private members `name` and `age`, and add getter and setter methods to initialize and modify the `age` variable is executed successfully.
 
 
