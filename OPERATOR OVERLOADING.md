@@ -4,9 +4,7 @@
 ---
 
 ### AIM  
-To write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(10, 21)` and `Ob2 = Complex(2, 3)` represent complex numbers.
-
----
+To write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(1, 2)` and `Ob2 = Complex(2, 3)` represent complex numbers.
 
 ### ALGORITHM
 
@@ -27,16 +25,35 @@ To write a Python program to perform division of two complex numbers using the b
 7. **Print the result**: Print the result of the division, which will be formatted by the `__repr__()` method.
 8. **End the Program.**
 
----
-
 ### PROGRAM
 
 ```
+# Reg.No-212223050048
+# Name-SIBIRAJI M
+# Write your code here
+class Complex:
+    def __init__(self,real,imag):
+        self.real=real
+        self.imag=imag
+    def __add__(self,other):
+        real=self.real+other.real
+        imag=self.imag+other.imag
+        return Complex(real,imag)
+    def __str__(self):
+        return f"({self.real}, {self.imag})"
+        
+ob1=Complex(1, 2)
+ob2=Complex(2, 3)
 
+result=ob1 + ob2
+print(result)
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/af054c45-cc62-433a-a029-dd28b5853de0)
 
 ### RESULT
+
+Thus the Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(10, 21)` and `Ob2 = Complex(2, 3)` represent complex numbers is executed successfully.
 
